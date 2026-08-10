@@ -19,6 +19,8 @@ jobs:
         with:
           enablement: true
       - uses: withastro/action@v3
+        with:
+          node-version: 22
 
   deploy:
     needs: build
