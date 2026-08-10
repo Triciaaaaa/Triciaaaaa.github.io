@@ -238,19 +238,6 @@ a { color: inherit; }
 .fragment--stamp::after { display: none; }
 .fragment--stamp figcaption { opacity: 0.75; padding-left: 6px; }
 
-/* 竖排中文 */
-.vertical {
-  writing-mode: vertical-rl;
-  font-size: 13px;
-  letter-spacing: 0.42em;
-  color: var(--grey);
-  position: absolute;
-  left: calc(100% + 26px);
-  top: 6px;
-  height: 90%;
-  max-height: 300px;
-}
-
 .poster__foot {
   margin-top: 84px;
   display: flex;
