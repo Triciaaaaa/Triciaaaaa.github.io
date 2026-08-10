@@ -1,0 +1,47 @@
+---
+import { getCollection, render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const d = post.data.date;
+const fmt = `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, "0")}.${String(d.getDate()).padStart(2, "0")}`;
+---
+
+<Base title={post.data.title} description={post.data.description}>
+  <article>
+    <div class="wrap wrap--narrow">
+      <header class="article-head">
+        <span class="micro micro--accent">
+          {fmt} — {post.data.tags.join(" / ") || "essay"}
+        </span>
+        <h1>{post.data.title}</h1>
+        <div class="rule"></div>
+      </header>
+
+      <div class="article-fig">
+        <figure class="fragment fragment--stamp">
+          <span class="stamp"><img src={post.data.cover} alt={post.data.coverAlt} /></span>
+          {post.data.coverCaption && <figcaption set:html={post.data.coverCaption} />}
+        </figure>
+      </div>
+
+      <div class="prose">
+        <Content />
+      </div>
+
+      <div class="article-end">
+        <a href="/blog">← index</a>
+        <span class="micro">fin.</span>
+      </div>
+    </div>
+  </article>
+</Base>

@@ -1,0 +1,67 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+const fmt = (d: Date) =>
+  `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, "0")}.${String(d.getDate()).padStart(2, "0")}`;
+---
+
+<Base>
+  <section class="poster">
+    <div class="wrap poster__frame">
+      <div class="poster__meta">
+        <span class="rule"></span>
+        <span class="micro">A Political Theory of Agent Societies — est. MMXXVI</span>
+      </div>
+
+      <h1>NOM<span class="hollow">O</span>S</h1>
+
+      <p class="poster__sub">
+        Agent societies are rebuilding what modernity dissolved: sovereignty,
+        hierarchy, constitutional order. This is the record of a work in
+        progress — writing them a political theory.
+        <span class="latin">Sovereign is he who decides on the exception.</span>
+      </p>
+
+      <figure class="fragment fragment--seal">
+        <img
+          src="/art/abstract/arcadia-seal.png"
+          alt="A circular dry-ink seal made from a fragment of Poussin's Et in Arcadia ego"
+        />
+        <figcaption>
+          seal no. 01 — et in arcadia ego<br />
+          after n. poussin / hand-pressed, clay ink
+        </figcaption>
+        <span class="vertical">who decides on the exception</span>
+      </figure>
+
+      <div class="poster__foot">
+        <span class="dots"></span>
+        <a class="poster__cta" href="/blog">Writing →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="index-head">
+      <h2>Recent writing</h2>
+      <a class="micro" href="/blog">view all →</a>
+    </div>
+    {posts.slice(0, 3).map((post, i) => (
+      <a class="entry" href={`/blog/${post.id}`}>
+        <span class="entry__no">{String(posts.length - i).padStart(2, "0")}</span>
+        <div>
+          <span class="entry__date">{fmt(post.data.date)} — {post.data.tags[0] ?? "essay"}</span>
+          <h3>{post.data.title}</h3>
+          <p>{post.data.description}</p>
+        </div>
+        <div class="entry__thumb">
+          <span class="stamp stamp--s"><img src={post.data.cover} alt={post.data.coverAlt} /></span>
+        </div>
+      </a>
+    ))}
+  </div>
+</Base>
