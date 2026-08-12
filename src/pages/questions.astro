@@ -5,19 +5,19 @@ const central = [
   {
     num: "I",
     q: "Who decides the exception?",
-    body: "Shutdown is the safety community's favorite guarantee and its least examined one. When many principals — developers, operators, platforms, regulators — jointly oversee an agent population, no single one of them knows enough to pause the system alone. Distributed shutdown is a sovereignty problem before it is an engineering problem: pausing decomposes into detection, attribution, and intervention, and every observed safety failure jams in exactly one gate. What must each principal know for a legitimate pause to exist at all?",
+    body: "Shutdown is the safety community's favorite guarantee and its least examined one. When developers, operators, platforms, and regulators jointly oversee an agent population, none of them knows enough to pause the system alone. Pausing splits into three gates: detection, attribution, intervention. Every safety failure we studied jams in exactly one. So what must each principal know for a legitimate pause to exist at all?",
     link: { href: "https://github.com/Triciaaaaa/three-gates", label: "three-gates" },
   },
   {
     num: "II",
     q: "Can a supreme text govern?",
-    body: "Constitutional AI encodes the good as a set of aggregated principles — a supreme text, beyond appeal. But aggregation is social choice, and social choice carries impossibility theorems. An AI constitution inherits Gibbard–Satterthwaite: it faces manufactured conflict between principles and underdetermination at the same time. What are the formal limits of governing an agent by constitution, and what lies beyond them?",
+    body: "Constitutional AI encodes the good as a set of aggregated principles, a supreme text beyond appeal. But aggregation is social choice, and social choice carries impossibility theorems. An AI constitution inherits Gibbard-Satterthwaite: conflict between principles and underdetermination at the same time. What are the formal limits of governing an agent by constitution?",
     link: null,
   },
   {
     num: "III",
     q: "Does the state of nature return?",
-    body: "Intuition says less hostility between AI developers means a safer world. Measured, the intuition fails: in the largest published AI-race simulation, reducing hostility synchronizes the race, safety-oriented agents lose the capability frontier, and simulated existential risk goes up. Hobbesian selection pressure is not a metaphor here — it is a measured force. Which interventions survive it?",
+    body: "Intuition says less hostility between AI developers means a safer world. In our simulations the intuition fails. Lowering hostility synchronizes the race, safety-oriented agents fall off the capability frontier, and simulated existential risk goes up. Which interventions survive that selection pressure?",
     link: { href: "https://github.com/Triciaaaaa/race-sync-sim", label: "race-sync-sim" },
   },
 ];
@@ -25,36 +25,32 @@ const central = [
 const adjacent = [
   {
     q: "What are representations converging toward?",
-    body: "Convergence statistics cannot tell world from language — the reading flips under a coordinate change that alters nothing observable. The direction of convergence is open.",
+    body: "Convergence statistics can't tell world from language. The reading flips under a coordinate change that alters nothing observable.",
   },
   {
-    q: "What is memory for an agent in a world too big to model?",
-    body: "Neither weights nor a retrieval store: maintain many local predictors, update all online, act on the best. Selection over cheap models as a theory of memory.",
+    q: "What is memory for an agent in a big world?",
+    body: "Neither weights nor a retrieval store. Keep many cheap local predictors, update them all online, act on the best one.",
   },
   {
     q: "Can machine-generated science be trusted?",
-    body: "Only mechanically. No claim survives on eloquence: SAT certificates, exhaustive enumeration, the Lean 4 kernel — and a pipeline that never emits “solved.”",
+    body: "Only mechanically. Every claim has to pass a verifier, and the pipeline never says solved.",
   },
   {
     q: "Does general intelligence specialize?",
-    body: "A 1,000-agent swarm under citation-based survival. Early signs: enforcement fails silently; collective welfare emerges unprompted.",
+    body: "A 1,000-agent swarm under citation-based survival. Enforcement fails silently. Collective welfare shows up unprompted.",
   },
 ];
 ---
 
 <Base
   title="Questions"
-  description="The questions this programme keeps returning to — sovereignty, constitutions, the state of nature."
+  description="The questions this programme keeps returning to: sovereignty, constitutions, the state of nature."
 >
   <div class="wrap">
     <header class="page-head">
       <span class="micro micro--accent">Questions</span>
       <h1>What I Keep Returning To</h1>
-      <p>
-        Three central problems and their satellites. Correct description is
-        the prerequisite for correct intervention; each question below is a
-        place where the description is still wrong or still missing.
-      </p>
+      <p>Three central problems, and the questions orbiting them.</p>
     </header>
 
     <div class="q-list">

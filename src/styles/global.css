@@ -80,7 +80,7 @@ a { color: inherit; }
   font-weight: 500;
 }
 .brand i { font-style: normal; color: var(--accent); }
-.site-nav { display: flex; gap: 26px; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: flex-end; }
 .site-nav a {
   font-family: var(--mono);
   font-size: 11.5px;
@@ -621,6 +621,7 @@ a { color: inherit; }
 }
 .cv-contact a { color: inherit; text-decoration-color: var(--line); text-underline-offset: 4px; }
 .cv-contact a:hover { color: var(--accent); }
+.cv-sep { margin: 0 10px; color: var(--grey-soft); }
 .cv-download { display: inline-block; margin-top: 22px; }
 
 .cv-section {
@@ -712,18 +713,27 @@ a { color: inherit; }
   .about-grid { grid-template-columns: 1fr; gap: 56px; }
 }
 @media (max-width: 860px) {
-  .cv-section { grid-template-columns: 1fr; gap: 14px; }
-  .q { grid-template-columns: 1fr; gap: 10px; padding: 44px 0; }
-  .q__num { font-size: 40px; }
+  .cv-section { grid-template-columns: 1fr; gap: 14px; padding: 36px 0; }
+  .q { grid-template-columns: 52px minmax(0, 1fr); gap: 20px; padding: 44px 0; }
+  .q__num { font-size: 36px; -webkit-text-stroke-width: 1px; }
   .q-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   body { font-size: 16px; }
-  .paper { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .site-header .wrap { flex-direction: column; gap: 14px; align-items: flex-start; }
+  .site-nav { justify-content: flex-start; gap: 8px 18px; }
+  .page-head { padding-top: 56px; }
+  .paper { grid-template-columns: minmax(0, 1fr); gap: 0; padding: 32px 0; }
   .paper__no { display: none; }
   .cv-methods { grid-template-columns: 1fr; gap: 2px 0; }
   .cv-methods dd { margin-bottom: 12px; }
-  .site-header .wrap { flex-direction: column; gap: 12px; }
+  .cv-download { width: 100%; text-align: center; }
+  .cv-contact > * { display: block; }
+  .cv-sep { display: none; }
+  .site-footer { margin-top: 90px; }
+  .site-footer .wrap { flex-direction: column; align-items: flex-start; }
+  .site-footer .fine { text-align: left; }
+  .index-head { margin-top: 70px; }
   .entry { grid-template-columns: minmax(0, 1fr) 76px; }
   .entry__no { display: none; }
   .entry__thumb .stamp { width: 76px; }

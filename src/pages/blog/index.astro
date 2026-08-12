@@ -12,7 +12,7 @@ const fmt = (d: Date) =>
 <Base title="Writing" description="All writing on NOMOS.">
   <div class="wrap">
     <header class="page-head">
-      <span class="micro micro--accent">Writing — index</span>
+      <span class="micro micro--accent">Writing · index</span>
       <h1>Writing</h1>
       <p>{posts.length} entries · newest first</p>
     </header>
@@ -22,7 +22,7 @@ const fmt = (d: Date) =>
         <a class="entry" href={`/blog/${post.id}`}>
           <span class="entry__no">{String(posts.length - i).padStart(2, "0")}</span>
           <div>
-            <span class="entry__date">{fmt(post.data.date)} — {post.data.tags[0] ?? "essay"}</span>
+            <span class="entry__date">{fmt(post.data.date)} · {post.data.tags[0] ?? "essay"}</span>
             <h3>{post.data.title}</h3>
             <p>{post.data.description}</p>
           </div>

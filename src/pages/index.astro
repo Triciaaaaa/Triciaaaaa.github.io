@@ -14,7 +14,7 @@ const fmt = (d: Date) =>
     <div class="wrap poster__frame">
       <div class="poster__meta">
         <span class="rule"></span>
-        <span class="micro">A Political Theory of Agent Societies — est. MMXXVI</span>
+        <span class="micro">A Political Theory of Agent Societies · est. MMXXVI</span>
       </div>
 
       <h1>NOM<span class="hollow">O</span>S</h1>
@@ -22,7 +22,7 @@ const fmt = (d: Date) =>
       <p class="poster__sub">
         Agent societies are rebuilding what modernity dissolved: sovereignty,
         hierarchy, constitutional order. This is the record of a work in
-        progress — writing them a political theory.
+        progress, writing them a political theory.
         <span class="latin">Sovereign is he who decides on the exception.</span>
       </p>
 
@@ -32,7 +32,7 @@ const fmt = (d: Date) =>
           alt="A circular dry-ink seal made from a fragment of Poussin's Et in Arcadia ego"
         />
         <figcaption>
-          seal no. 01 — et in arcadia ego<br />
+          seal no. 01 · et in arcadia ego<br />
           after n. poussin / hand-pressed, clay ink
         </figcaption>
       </figure>
@@ -53,7 +53,7 @@ const fmt = (d: Date) =>
       <a class="entry" href={`/blog/${post.id}`}>
         <span class="entry__no">{String(posts.length - i).padStart(2, "0")}</span>
         <div>
-          <span class="entry__date">{fmt(post.data.date)} — {post.data.tags[0] ?? "essay"}</span>
+          <span class="entry__date">{fmt(post.data.date)} · {post.data.tags[0] ?? "essay"}</span>
           <h3>{post.data.title}</h3>
           <p>{post.data.description}</p>
         </div>
@@ -70,19 +70,19 @@ const fmt = (d: Date) =>
       <a class="dir-cell" href="/questions">
         <span class="micro micro--accent">Questions</span>
         <h3>What I keep returning to</h3>
-        <p>Sovereignty and the exception, the limits of constitutions, the return of the state of nature.</p>
+        <p>Three problems: the exception, the constitution, the state of nature.</p>
         <span class="dir-cell__arrow">→</span>
       </a>
       <a class="dir-cell" href="/research">
         <span class="micro micro--accent">Research</span>
         <h3>Papers &amp; abstracts</h3>
-        <p>Four papers under review at AAAI 2027, working papers, and the infrastructure behind them.</p>
+        <p>Four under review at AAAI 2027, more on the way.</p>
         <span class="dir-cell__arrow">→</span>
       </a>
       <a class="dir-cell" href="/cv">
         <span class="micro micro--accent">CV</span>
         <h3>Curriculum vitae</h3>
-        <p>Political theory of agent societies, built from inside a frontier lab. PDF available.</p>
+        <p>The short version of who I am, plus a PDF.</p>
         <span class="dir-cell__arrow">→</span>
       </a>
     </div>

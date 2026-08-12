@@ -1,10 +1,10 @@
 ---
 title: "Before We Begin: AI Safety Is Missing a Political Philosophy"
-description: Agent societies are rebuilding the political forms modernity dissolved. This blog records a work in progress — writing them a political theory.
+description: Agent societies are rebuilding the political forms modernity dissolved. This blog records a work in progress, writing them a political theory.
 date: 2026-08-10
 cover: /art/abstract/arcadia-ink.jpg
 coverAlt: A black-ink abstraction of Poussin's Et in Arcadia ego
-coverCaption: fig. — et in arcadia ego<br />n. poussin, c. 1638 / riso print
+coverCaption: fig. · et in arcadia ego<br />n. poussin, c. 1638 / riso print
 tags: [essay]
 ---
 

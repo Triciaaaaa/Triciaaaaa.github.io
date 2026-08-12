@@ -1,10 +1,10 @@
 ---
 title: "Who Decides the Exception: The Three Gates of Distributed Shutdown"
-description: Pausing a multi-principal system decomposes into three necessary gates — detection, attribution, intervention — and every observed safety failure jams in exactly one of them.
+description: Pausing a multi-principal system decomposes into three necessary gates. Detection, attribution, intervention. Every observed safety failure jams in exactly one of them.
 date: 2026-08-02
 cover: /art/abstract/calm-ink.jpg
-coverAlt: A black-ink abstraction of Poussin's Landscape with a Calm — water and a castle silhouette
-coverCaption: fig. — landscape with a calm<br />n. poussin, 1650–51 / riso print
+coverAlt: A black-ink abstraction of Poussin's Landscape with a Calm, water and a castle silhouette
+coverCaption: fig. · landscape with a calm<br />n. poussin, 1650–51 / riso print
 tags: [research-note]
 ---
 

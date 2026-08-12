@@ -3,8 +3,8 @@ title: "The Political Theology of AGI: A Research Programme"
 description: Agent societies are structurally reproducing pre-modern political forms. Safety frameworks that treat agents as instruments misidentify the phenomenon they mean to govern.
 date: 2026-07-21
 cover: /art/abstract/orpheus-ink.jpg
-coverAlt: A black-ink abstraction of Poussin's Landscape with Orpheus and Eurydice — smoke rising from a distant castle
-coverCaption: fig. — orpheus and eurydice<br />n. poussin, c. 1650 / riso print
+coverAlt: A black-ink abstraction of Poussin's Landscape with Orpheus and Eurydice, smoke rising from a distant castle
+coverCaption: fig. · orpheus and eurydice<br />n. poussin, c. 1650 / riso print
 tags: [programme]
 ---
 

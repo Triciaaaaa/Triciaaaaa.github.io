@@ -18,7 +18,7 @@ const underReview: Paper[] = [
       "Building the Off-Switch: The Three Gates of Pausing a Multi-Principal Agent System",
     authors: "Shuo Li Liu, Xuanyi Wang, Haochen Wen",
     abstract:
-      "When many principals — developers, operators, platform owners, regulators — jointly oversee a population of interacting agents, no single one of them holds enough information to decide a shutdown alone. This paper gives the first complete formal treatment of distributed shutdown authority. Pausing decomposes into three necessary gates — detection (someone sees the danger), attribution (someone can say which agents or behaviors are responsible), and intervention (the system can be selectively stopped) — and every observed real-world safety failure maps onto exactly one failing gate. We prove conditional lower bounds on what each principal must know for a legitimate pause decision to exist.",
+      "When developers, operators, platform owners, and regulators jointly oversee a population of interacting agents, none of them holds enough information to decide a shutdown alone. This paper gives the first complete formal treatment of distributed shutdown authority. Pausing decomposes into three necessary gates: detection, attribution, and intervention. Every observed safety failure maps onto exactly one failing gate, and we prove conditional lower bounds on what each principal must know for a legitimate pause decision to exist.",
     repo: "https://github.com/Triciaaaaa/three-gates",
   },
   {
@@ -27,7 +27,7 @@ const underReview: Paper[] = [
     title: "In the Stream: Agent Memory for the Big World",
     authors: "Xuanyi Wang, Shuo Li Liu, Haochen Wen",
     abstract:
-      "Most agent-memory designs assume one of two extremes: consolidate experience into model weights (slow, destructive, opaque) or keep an ever-growing external store and retrieve from it (cheap to write, hard to keep predictive). We develop a third path from the online-learning literature: maintain many local predictive models simultaneously, update all of them online as the stream arrives, and at each decision point act on whichever currently predicts best. In a world too big to model globally, selection over cheap local models beats both extremes — reaching 90.0 on MemoryAgentBench, above all published systems.",
+      "Agent memory usually means one of two extremes: consolidate experience into model weights, which is slow and destructive, or keep an ever-growing external store, which is cheap to write and hard to keep predictive. We develop a third path from the online-learning literature. Maintain many local predictive models, update all of them as the stream arrives, and at each decision point act on whichever currently predicts best. On MemoryAgentBench this reaches 90.0, above all published systems.",
     repo: "https://github.com/Triciaaaaa/stream-memory",
   },
   {
@@ -36,7 +36,7 @@ const underReview: Paper[] = [
     title: "Convergence Is Open: What Are Representations Converging Toward?",
     authors: "Xuanyi Wang, Shuo Li Liu, Haochen Wen",
     abstract:
-      "The platonic-representation line of work reads growing cross-model and cross-modal representational similarity as evidence that models approach a shared statistical model of reality. This paper examines the measurement itself. The central result is a gauge-invariance argument: the directional statistics used to argue “convergence toward the world” or “convergence toward language” are not invariant under invertible reparameterizations of the representation space — the same underlying system can yield either reading under a coordinate change that alters nothing observable. The direction of convergence is an open problem, not a settled one.",
+      "The platonic-representation literature reads growing cross-model and cross-modal similarity as evidence that models approach a shared statistical model of reality. We examine the measurement itself. The directional statistics behind claims of convergence toward the world, or toward language, are not invariant under invertible reparameterizations of the representation space. The same system can yield either reading under a coordinate change that alters nothing observable. The direction of convergence remains open.",
     repo: "https://github.com/Triciaaaaa/convergence-open",
   },
   {
@@ -46,7 +46,7 @@ const underReview: Paper[] = [
       "Reduced Hostility Increases Simulated Existential Risk Through Race Synchronization",
     authors: "Shuo Li Liu, Xuanyi Wang, Haochen Wen",
     abstract:
-      "Intuition says that making AI developers less hostile to each other should make the world safer. The largest published AI-race simulation (~10K game runs, ~9.7M trajectory evaluations) probes that intuition mechanically: firms choose between capability racing and safety investment inside a continuation-subgame model, and outcomes are scored by whether humanity survives and who controls the endpoint. The headline phenomenon is race synchronization — reducing hostility aligns competitors' schedules, safety-oriented agents lose the capability frontier, and simulated existential risk goes up. Hobbesian selection pressure, measured rather than conjectured.",
+      "Intuition says that making AI developers less hostile to each other should make the world safer. We test this in the largest published AI-race simulation: about 10K game runs and 9.7M trajectory evaluations of firms choosing between capability racing and safety investment. Reducing hostility synchronizes competitors' schedules, safety-oriented agents lose the capability frontier, and simulated existential risk rises.",
     repo: "https://github.com/Triciaaaaa/race-sync-sim",
   },
 ];
@@ -58,7 +58,7 @@ const working: Paper[] = [
     title: "The Formal Limitations of an Artificial Intelligence Constitution",
     authors: "Xuanyi Wang, Shuo Li Liu",
     abstract:
-      "Encoding AI goals as constitutional principles is an aggregation problem, and aggregation problems have known impossibility results. This paper gives the first application of Gibbard–Satterthwaite impossibility to constitutional AI design: aggregated principles inherit conflict from social choice and face underdetermination at once. Both failure modes are quantified by simulation.",
+      "Encoding AI goals as constitutional principles is an aggregation problem, and aggregation has known impossibility results. This paper gives the first application of Gibbard-Satterthwaite to constitutional AI design: aggregated principles inherit conflict from social choice and face underdetermination at once. Both failure modes are quantified by simulation.",
   },
   {
     no: "06",
@@ -66,7 +66,7 @@ const working: Paper[] = [
     title: "Does General Intelligence Specialize?",
     authors: "SWARM study",
     abstract:
-      "A pre-registered 1,000-agent LLM swarm with citation-based survival, active elimination, and covert adversarial agents; over $50K of API compute committed. Early findings: enforcement fails silently under illusory selection pressure, and collective-welfare behavior emerges unprompted.",
+      "A pre-registered 1,000-agent LLM swarm with citation-based survival, active elimination, and covert adversarial agents. Over $50K of API compute committed. Early findings: enforcement fails silently under illusory selection pressure, and collective-welfare behavior emerges unprompted.",
     repo: "https://github.com/Triciaaaaa/swarm-preregistration",
   },
   {
@@ -76,7 +76,7 @@ const working: Paper[] = [
       "Provers Game the Spec: Verifiable Measurement of Specification Gaming in Formal Theorem Proving",
     authors: "—",
     abstract:
-      "The first per-proof, machine-checkable gaming criterion (replay-transfer) and the first capability-controlled base-vs-RL measurement of specification exploitation in an exact-ground-truth domain (Lean 4). Preregistered hypotheses, kill-gates, and stop-loss rules fixed before execution.",
+      "The first per-proof, machine-checkable gaming criterion (replay-transfer), and the first capability-controlled base-vs-RL measurement of specification exploitation in a domain with exact ground truth (Lean 4). Hypotheses, kill-gates, and stop-loss rules were fixed before execution.",
   },
   {
     no: "08",
@@ -85,7 +85,7 @@ const working: Paper[] = [
       "One-Day AI4Science: A 100-Billion-Token Campaign on Forty Open Theory Problems",
     authors: "—",
     abstract:
-      "Forty curated frontiers across economics theory, theoretical physics, and theoretical chemistry, each with a frozen micro-conjecture and a mechanical verifier. Fail-closed by construction: two independent verification paths per claim, clean-room replication, and a pipeline that never emits “solved.” Results under expert review.",
+      "Forty curated frontiers across economics, physics, and chemistry theory, each with a frozen micro-conjecture and a mechanical verifier. Fail-closed by construction: two independent verification paths per claim, clean-room replication, and a pipeline that never says solved. Results are under expert review.",
     repo: "https://github.com/Triciaaaaa/ai4sci-one-day",
   },
   {
@@ -94,23 +94,22 @@ const working: Paper[] = [
     title: "The Political Theology of AGI",
     authors: "long-form essay & research programme",
     abstract:
-      "Agent societies are a structural recurrence of pre-modern political forms, and safety frameworks misread them by treating agents as instruments rather than participants. Three open problems connect the formal work above to Schmitt, Hobbes, and social choice. The programme note is on the blog; the long essay is in preparation.",
+      "Agent societies are a structural recurrence of pre-modern political forms, and safety frameworks misread them by treating agents as instruments instead of participants. Three open problems connect the formal work above to Schmitt, Hobbes, and social choice. The programme note is on the blog. The long essay is in preparation.",
   },
 ];
 ---
 
 <Base
   title="Research"
-  description="Papers and abstracts — the formal record of a political theory of agent societies."
+  description="Papers and abstracts from the programme: four under review at AAAI 2027, the rest in progress."
 >
   <div class="wrap">
     <header class="page-head">
       <span class="micro micro--accent">Research</span>
       <h1>Papers &amp; Abstracts</h1>
       <p>
-        The formal record of the programme. Four papers under review, the rest
-        in various states of becoming. Code and frozen artifacts for each are
-        public.
+        Four papers under review, the rest in progress. Code and frozen
+        artifacts for each are public.
       </p>
     </header>
 
@@ -122,7 +121,6 @@ const working: Paper[] = [
       <article class="paper">
         <span class="paper__no">{p.no}</span>
         <div class="paper__body">
-          <span class="micro">{p.status}</span>
           <h3>{p.title}</h3>
           <p class="paper__authors">{p.authors}</p>
           <p class="paper__abstract">{p.abstract}</p>
@@ -137,7 +135,7 @@ const working: Paper[] = [
 
     <div class="index-head">
       <h2>Working &amp; in progress</h2>
-      <span class="micro">2026 —</span>
+      <span class="micro">since 2026</span>
     </div>
     {working.map((p) => (
       <article class="paper">
@@ -167,8 +165,7 @@ const working: Paper[] = [
         <h3>Humans, Ethics, Machines（人、伦理、机器人）</h3>
         <p class="paper__abstract">
           Contributing author. Grew out of AI-ethics research at Microsoft
-          Research Asia, including source-level debiasing for training
-          datasets.
+          Research Asia.
         </p>
       </div>
     </article>

@@ -2,14 +2,14 @@
 import Base from "../layouts/Base.astro";
 ---
 
-<Base title="CV" description="Curriculum vitae of Xuanyi Wang — political theory of agent societies.">
+<Base title="CV" description="Curriculum vitae of Xuanyi Wang: political theory of agent societies.">
   <div class="wrap wrap--cv">
     <header class="page-head cv-head">
       <span class="micro micro--accent">Curriculum Vitae</span>
       <h1>Xuanyi Wang <span class="cv-cjk">王轩怡</span></h1>
       <p class="cv-contact">
-        Beijing, China ·
-        <a href="mailto:akiraeternal1214@gmail.com">akiraeternal1214@gmail.com</a> ·
+        <span>Beijing, China</span><span class="cv-sep">·</span>
+        <a href="mailto:akiraeternal1214@gmail.com">akiraeternal1214@gmail.com</a><span class="cv-sep">·</span>
         <a href="https://github.com/Triciaaaaa">github.com/Triciaaaaa</a>
       </p>
       <a class="poster__cta cv-download" href="/files/Xuanyi-Wang-CV.pdf">Download PDF ↓</a>
@@ -19,38 +19,26 @@ import Base from "../layouts/Base.astro";
       <h2 class="cv-h">Research Statement</h2>
       <div class="cv-body cv-prose">
         <p>
-          Agent systems are reconstituting, for the first time outside human
-          society, the political forms modernity dissolved: sovereignty,
-          organic hierarchy, constitutional order. The AI safety community has
-          forecasters, interpretability researchers, and alignment engineers.
-          It does not yet have a political theory of agent societies. I am
-          building one.
-        </p>
-        <p>
-          The programme is formal, and it already has results. Distributed
-          shutdown is a sovereignty problem — who decides the exception when
-          no principal knows enough to act alone — and it admits
-          information-theoretic lower bounds (AAAI 2027, under review).
-          Encoding AI goals as constitutional principles inherits
-          Gibbard–Satterthwaite impossibility. The largest published AI-race
-          simulation shows that reducing hostility <em>raises</em> simulated
-          existential risk — Hobbesian selection pressure, measured rather
-          than conjectured.
+          Agent systems are reconstituting, outside human society, the
+          political forms modernity dissolved: sovereignty, organic hierarchy,
+          constitutional order. The AI safety community has forecasters,
+          interpretability researchers, and alignment engineers. It does not
+          yet have a political theory of agent societies. I am building one.
+          The programme is formal and already has results: lower bounds on
+          distributed shutdown, impossibility theorems for AI constitutions,
+          and race dynamics measured at scale. Abstracts are on the
+          <a href="/research">research page</a>.
         </p>
         <p>
           I build this theory from inside a frontier lab. At ByteDance Seed I
-          own training-data quality for frontier vision-language models — work
+          own training-data quality for frontier vision-language models, work
           that carried the model to tool-free SOTA alongside the Gemini
           series. Political theories of AI are mostly written far from the
-          machinery; frontier engineering mostly runs without political
-          theory. My programme stands on both.
-        </p>
-        <p>
-          A second programme runs in parallel: verification-first AI for
-          science — multi-model research pipelines in which no claim survives
-          on eloquence. Every result must pass mechanical verification, from
-          SAT certificates to the Lean 4 kernel, and the pipeline never emits
-          <em>solved</em>.
+          machinery. Frontier engineering mostly runs without political
+          theory. My programme stands on both. A second programme runs in
+          parallel: verification-first AI for science, where every claim must
+          pass mechanical verification before it counts, and the pipeline
+          never says <em>solved</em>.
         </p>
       </div>
     </section>
@@ -58,7 +46,7 @@ import Base from "../layouts/Base.astro";
     <section class="cv-section">
       <h2 class="cv-h">Publications</h2>
       <div class="cv-body">
-        <span class="micro">Under review — AAAI 2027</span>
+        <span class="micro">Under review · AAAI 2027</span>
         <ul class="cv-pubs">
           <li>
             <em>Building the Off-Switch: The Three Gates of Pausing a Multi-Principal Agent System.</em>
@@ -136,8 +124,8 @@ import Base from "../layouts/Base.astro";
       <div class="cv-body">
         <div class="cv-entry">
           <div class="cv-entry__row">
-            <h3>AgentNorm — Researcher</h3>
-            <span class="cv-entry__when">2026 — now</span>
+            <h3>AgentNorm · Researcher</h3>
+            <span class="cv-entry__when">since 2026</span>
           </div>
           <p class="cv-entry__note">
             Independent AI-safety research organization (founder: Shuo Li
@@ -148,8 +136,8 @@ import Base from "../layouts/Base.astro";
         </div>
         <div class="cv-entry">
           <div class="cv-entry__row">
-            <h3>ByteDance Seed — Data Scientist, VLM Training Data</h3>
-            <span class="cv-entry__when">jan 2026 — now</span>
+            <h3>ByteDance Seed · Data Scientist, VLM Training Data</h3>
+            <span class="cv-entry__when">since jan 2026</span>
           </div>
           <p class="cv-entry__note">
             Frontier foundation-model lab; training data for ByteDance's
@@ -157,20 +145,20 @@ import Base from "../layouts/Base.astro";
           </p>
           <ul class="cv-items">
             <li>
-              <strong>Data quality governance</strong> — owned quality across
+              <strong>Data quality governance</strong>: owned quality across
               the full VLM pipeline (pre-training, SFT, RL); built the error
               taxonomy and audit framework covering dozens of sources;
               identified 26.6% problematic datasets and lifted overall data
               quality by 5pp.
             </li>
             <li>
-              <strong>Benchmark offensives</strong> — decomposed ZeroBench,
+              <strong>Benchmark offensives</strong>: decomposed ZeroBench,
               BabyVision, and other hard evaluations into targeted
               sub-benchmarks with matching training sets; model reached
               tool-free SOTA, level with the Gemini series.
             </li>
             <li>
-              <strong>Capability closure</strong> — designed the four-level
+              <strong>Capability closure</strong>: designed the four-level
               atomic perception taxonomy and the evaluation-to-curation loop;
               closed gaps in K12 reasoning and video perception; independently
               led 9-language OCR evaluation end-to-end.
@@ -179,8 +167,8 @@ import Base from "../layouts/Base.astro";
         </div>
         <div class="cv-entry">
           <div class="cv-entry__row">
-            <h3>Microsoft Research Asia — AI Ethics Research Intern</h3>
-            <span class="cv-entry__when">jan — jul 2022</span>
+            <h3>Microsoft Research Asia · AI Ethics Research Intern</h3>
+            <span class="cv-entry__when">jan-jul 2022</span>
           </div>
           <p class="cv-entry__note">
             Surveyed alignment and interpretability; proposed source-level
@@ -196,8 +184,8 @@ import Base from "../layouts/Base.astro";
       <div class="cv-body">
         <div class="cv-entry">
           <div class="cv-entry__row">
-            <h3>University of Chinese Academy of Social Sciences — B.A. in Philosophy</h3>
-            <span class="cv-entry__when">2021 — 2025</span>
+            <h3>University of Chinese Academy of Social Sciences · B.A. in Philosophy</h3>
+            <span class="cv-entry__when">2021-2025</span>
           </div>
           <p class="cv-entry__note">
             Mathematical logic; logic, language &amp; cognition; political
@@ -213,19 +201,19 @@ import Base from "../layouts/Base.astro";
       <div class="cv-body">
         <ul class="cv-items cv-items--infra">
           <li>
-            <strong>Multi-Agent Race Simulator</strong> — largest published
+            <strong>Multi-Agent Race Simulator</strong>: the largest published
             AI-race simulation: ~9.7M trajectory evaluations across ~10K game
             runs.
             <a href="https://github.com/Triciaaaaa/race-sync-sim">race-sync-sim</a>
           </li>
           <li>
-            <strong>SWARM Social Simulation</strong> — 1,000-agent LLM swarm
+            <strong>SWARM Social Simulation</strong>: a 1,000-agent LLM swarm
             with citation-based survival, active elimination, and covert
             adversarial agents; over $50K API compute committed.
             <a href="https://github.com/Triciaaaaa/swarm-preregistration">swarm-preregistration</a>
           </li>
           <li>
-            <strong>math-swarm</strong> — mechanically-verified multi-model
+            <strong>math-swarm</strong>: a mechanically verified multi-model
             pipeline: every claim must pass free mechanical verification (SAT
             + DRAT/LRAT certificates, exhaustive enumeration, the Lean 4
             kernel) before consuming an expensive model call.
